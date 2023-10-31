@@ -8,9 +8,9 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    border-style: double;
+    border-style: solid;
     border-color: white;
-    border-width: 15px;
+    border-width: 10px;
     border-radius: 15px;
     color: white;
     text-align: center;
