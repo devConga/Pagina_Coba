@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <Titulo />
     <Images />
-    <Grafica />
+    {/* <Grafica /> */}
   </React.StrictMode>
 );
 
