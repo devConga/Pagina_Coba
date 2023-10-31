@@ -1,0 +1,21 @@
+body{
+    background-color:rgb(21, 21, 36);
+}
+
+.titleBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border-style: double;
+    border-color: white;
+    border-width: 15px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+    padding: 25px;
+    margin: 50px 100px;
+}
