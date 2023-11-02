@@ -5,7 +5,7 @@ import {useState, useEffect} from 'react';
 function Titulo() {
 
  return(
-    <div className='titleBox'>GRAFICAS DE USO DEL NUMPAD 4x4</div>
+    <div className='titleBox'>Numpad 4x4</div>
  )
 }
 

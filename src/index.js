@@ -5,8 +5,9 @@ import Botones from './Components/Botones';
 import App from './Components/App'
 import Titulo from './Components/Titulo'
 import Images from './Components/Imagen';
-import Grafica from './Components/Grafica';
 import reportWebVitals from './reportWebVitals';
+import Conexion from './Components/Conexion';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +15,7 @@ root.render(
     <Titulo />
     <Images />
     {/* <Grafica /> */}
+    <Conexion />
   </React.StrictMode>
 );
 
