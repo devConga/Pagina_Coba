@@ -41,7 +41,7 @@ function Conexion(){
 
     mqttClient.on("message", (topic, message) => {
     console.log(`received message: ${message} from topic: ${topic}`);
-    setMens(message)
+    setMens(message.toString())
     });
 
     /* mqttClient.publish('testtopic/react', 'Hello, HiveMQ!'); */
