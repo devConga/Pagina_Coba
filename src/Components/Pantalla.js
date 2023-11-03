@@ -8,15 +8,29 @@ function Pantalla(props) {
 
     var mqttClient = props.cliente
 
-    const [mens, setMens] = useState(null)
+    const [mens, setMens] = useState()
 
-    
+    var mensaje = "hola";
+
+    useEffect(() => {
+
+        
+        /* setMens(mensaje) */
+        console.log("Mens cambiado")
+
+    },[mensaje])    
 
 
     mqttClient.on("message", (topic, message) => {
         console.log(`received message: ${message} from topic: ${topic}`);
-        setMens(message.toString())
+        mensaje = message.toString()
+        
+        /* setMens(message.toString()) */
         });
+
+    
+    
+    /* console.log(`Mensaje es: ${mensaje}`) */
 
     return(
         <div>
