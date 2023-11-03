@@ -13,32 +13,6 @@ function Botones() {
   return (
 
     <div>
-      <div className='barraLogin'>
-
-          <div className='flexboxColumna'>
-            <a href='#' className='link texto_login'></a>
-          </div>
-
-          <div className='flexboxColumna'>
-            <a href='#' className='link texto_login'>como</a>
-          </div>
-
-          <div className='flexboxColumna'>
-            <a href='#' className='link texto_login'>tan</a>
-          </div>
-
-          <div className='flexboxColumna'>
-            <a href='#' className='link texto_login'>muchacho'</a>
-          </div>
-
-          <div className='flexboxColumna'>
-            <a href='#' className='link texto_login'></a>
-          </div>
-
-          <div className='flexboxColumna'>
-              <DropDownMenu />
-          </div>
-      </div>
 
       <div className='flexboxColumna' style={{alignItems: 'center'}}>
         <p className='el_titulo' style={{color: 'white', width: '50%'}}>Hola somos el grupo 2 y schujman nos va a poner un</p>

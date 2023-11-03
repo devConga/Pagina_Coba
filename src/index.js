@@ -7,16 +7,18 @@ import Titulo from './Components/Titulo'
 import Images from './Components/Imagen';
 import reportWebVitals from './reportWebVitals';
 import Conexion from './Components/Conexion';
+import Pantalla from './Components/Pantalla';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
     <Titulo />
-    <Images />
-    {/* <Grafica /> */}
+    
     <Conexion />
-  </React.StrictMode>
+    {/* <Images /> */}
+    {/* <Grafica /> */}
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function
