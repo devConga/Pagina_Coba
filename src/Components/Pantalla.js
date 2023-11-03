@@ -6,14 +6,16 @@ import * as mqtt from "mqtt/dist/mqtt";
 
 function Pantalla(props) {
 
-    const mqttClient = props.cliente
+    var mqttClient = props.cliente
 
-    const [mens, setMensaje] = useState(0)
+    const [mens, setMens] = useState(null)
+
+    
 
 
     mqttClient.on("message", (topic, message) => {
         console.log(`received message: ${message} from topic: ${topic}`);
-        setMensaje(mens + 1)
+        setMens(message.toString())
         });
 
     return(

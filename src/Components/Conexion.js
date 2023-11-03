@@ -10,20 +10,23 @@ function Conexion(){
     const username = "emqx_test"; //""
     const password = "emqx_test"; //""
     
-    const [mens, setMens] = useState("a")
+
+    let mqttClient = 0;
     
     
-    const mqttClient = mqtt.connect("ws://broker.emqx.io:8083/mqtt", {
-    clientId,
-    username,
-    password,
-    }); 
+    if(mqttClient==0){
+        mqttClient = mqtt.connect("ws://broker.emqx.io:8083/mqtt", {
+        clientId,
+        username,
+        password,
+        });
+    }
     
     
     //ws://10.0.3.201:1883/mqtt
 
     
-    
+
     mqttClient.on("error", (err) => {
     console.log("Error: ", err);
     mqttClient.end();
@@ -34,15 +37,15 @@ function Conexion(){
     });
 
     mqttClient.on("connect", () => {
-    console.log("Client connected:" + clientId);
+    console.log("Client connected: " + clientId);
     mqttClient.subscribe("testtopic/react"); //Teclado
     });
 
+    console.log("Recargado")
 
-    mqttClient.on("message", (topic, message) => {
+    /* mqttClient.on("message", (topic, message) => {
     console.log(`received message: ${message} from topic: ${topic}`);
-    setMens(message.toString())
-    });
+    }); */
 
     /* mqttClient.publish('testtopic/react', 'Hello, HiveMQ!'); */
     /* return(
@@ -52,7 +55,11 @@ function Conexion(){
     return(
 
         <div>
+        <Pantalla cliente = {mqttClient} />
+
+        {/* <div>
             <div className='titleBox'>{mens}</div>         
+        </div> */}
         </div>
     )
 

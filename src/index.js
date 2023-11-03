@@ -8,6 +8,7 @@ import Images from './Components/Imagen';
 import reportWebVitals from './reportWebVitals';
 import Conexion from './Components/Conexion';
 import Pantalla from './Components/Pantalla';
+import Conexion2 from './Components/Conexion2';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
