@@ -23,9 +23,9 @@ function Pantalla(props) {
 
     mqttClient.on("message", (topic, message) => {
         console.log(`received message: ${message} from topic: ${topic}`);
-        mensaje = message.toString()
+        /* mensaje = message.toString() */
         
-        /* setMens(message.toString()) */
+        setMens(message.toString())
         });
 
     
