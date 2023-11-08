@@ -14,6 +14,9 @@ function Distribucion(){
             3
         </div>
         <div className="caja-grid bAd">
+            A
+        </div>
+        <div className="caja-grid">
             4
         </div>
         <div className="caja-grid">
@@ -21,6 +24,9 @@ function Distribucion(){
         </div>
         <div className="caja-grid">
             6
+        </div>
+        <div className="caja-grid">
+            B
         </div>
         <div className="caja-grid">
             7
@@ -32,25 +38,19 @@ function Distribucion(){
             9
         </div>
         <div className="caja-grid">
-            10
-        </div>
-        <div className="caja-grid">
-            11
-        </div>
-        <div className="caja-grid">
-            12
+            C
         </div>
         <div className="caja-grid bai">
-            13
+            *
         </div>
         <div className="caja-grid">
-            14
+            0
         </div>
         <div className="caja-grid">
-            15
+            #
         </div>
         <div className="caja-grid bad">
-            16
+            DEL
         </div>
      </div>
     )
