@@ -7,9 +7,9 @@ import '../Styles/index.css';
 import { useState, useEffect } from 'react';
 
 function Conexion() {
-    const clientId = "emqx_react_" + Math.random().toString(16).substring(2, 8);
-    const username = "emqx_test"; //""
-    const password = "emqx_test"; //""
+    const clientId = "emqx_" + Math.random().toString(16).substring(2, 8);
+    const username = ""; //""
+    const password = ""; //""
 
     const [mqttClient, setMqttClient] = useState(null);
     const [mens, setMens] = useState('');
@@ -18,7 +18,7 @@ function Conexion() {
     var suscribed = false;
 
     if (mqttClient == null) {
-        setMqttClient(mqtt.connect("ws://broker.emqx.io:8083/mqtt", {
+        setMqttClient(mqtt.connect("ws://10.0.3.201:8083/mqtt", {
             clientId,
             username,
             password,
@@ -58,7 +58,7 @@ function Conexion() {
     }, [mqttClient, codigo]);
 
     if (mqttClient != null && !suscribed) {
-        mqttClient.subscribe("miTopicoReact"); //Teclado
+        mqttClient.subscribe("teclado"); //Teclado
         suscribed = true;
     }
 
